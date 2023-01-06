@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-3">Login</h1>
+        <div class="card shadow p-3 mb-5 bg-body rounded">
+            <!--<form method="POST" action="{% url 'tasks' %}">-->
+                <div class="mb-3">
+                    <label for="fieldEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="fieldEmail" name="email" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="fieldPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="fieldPassword" name="password" required>
+                </div>
+    
+                
+                <a href="{% url 'tasks' %}">
+                    <button class="btn btn-primary mb-3">Login</button>
+                </a>
+            <!--</form>        -->
+        </div>
+    </div>
+</body>
+</html>
